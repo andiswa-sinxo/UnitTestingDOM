@@ -1,5 +1,5 @@
 describe("The Calculate Bill Factory Function" , function() {
-    it ("should enter a string with calls  separated with commas" , function(){
+    it ("should enter a string with 2 calls  separated with commas" , function(){
 
         let calcBills = CalculateBills();
         calcBills.BillCalculate("call,call");
@@ -7,7 +7,7 @@ describe("The Calculate Bill Factory Function" , function() {
 
     });
 
-    it ("should enter a string with sms  separated with commas" , function(){
+    it ("should enter a string with 4 sms  separated with commas" , function(){
 
         let calcBills = CalculateBills();
         calcBills.BillCalculate("sms,sms,sms,sms");
@@ -15,7 +15,7 @@ describe("The Calculate Bill Factory Function" , function() {
 
     });
 
-    it ("should enter a string with calls and sms's  separated with commas" , function(){
+    it ("should enter a string with 4 calls and 4 sms's  separated with commas" , function(){
 
         let calcBills = CalculateBills();
         calcBills.BillCalculate("sms,sms,sms,sms,call,call, call,call");

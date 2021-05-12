@@ -24,7 +24,7 @@ describe("The bill with settings factory settings" , function() {
         assert.equal(0.65 , settingsBillSecond.getSmsCost());
     })
 
-    it ("should set the sms cost and the sms cost" , function(){
+    it ("should set the call cost and the sms cost" , function(){
         let settingsBill=BillWithSettings();
 
         settingsBill.setCallCost(2.75);
