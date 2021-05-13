@@ -17,23 +17,24 @@ function textInputBill(){
     }
 
     function getTotalText(){
+        textTotal=callsTotal+ smsTotal
         return textTotal;
 
     }
 
-    function getCallTotal(){
+    function enterCallTotal(){
         return callsTotal;
     }
 
-    function getSmsTotal(){
+    function enterSmsTotal(){
         return smsTotal;
     }
 
     function warningCriticalLevel(){
-        if (getTotalText() >= 30 && getTotalText() < 50){
+        if (getTotalText() >= 10 && getTotalText() < 20){
             return 'warning'
         }
-        else if (getTotalText() >= 50){
+        else if (getTotalText() >= 20){
             return 'critical'
         }
     }
@@ -41,8 +42,8 @@ function textInputBill(){
     return{
         textBillTotal,
         getTotalText,
-        getCallTotal,
-        getSmsTotal,
+        enterCallTotal,
+        enterSmsTotal,
         warningCriticalLevel
 }
 }
