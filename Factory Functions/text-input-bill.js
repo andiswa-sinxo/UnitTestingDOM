@@ -29,8 +29,8 @@ function textInputBill(){
     function enterSmsTotal(){
         return smsTotal;
     }
-
     function warningCriticalLevel(){
+
         if (getTotalText() >= 10 && getTotalText() < 20){
             return 'warning'
         }
